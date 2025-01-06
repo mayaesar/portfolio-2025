@@ -2,10 +2,9 @@
 import { FaLinkedin, FaGithub, FaTiktok, FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
 
-
 export default function Header() {
     const downloadResume = () => {
-        console.log("Download Resume");
+        window.open(window.origin + "/mayaCv.pdf", "_blank");
     };
 
     return (
