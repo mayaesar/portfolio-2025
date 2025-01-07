@@ -11,7 +11,7 @@ export default function ProjectCard({ project }) {
             <h2 className="text-xl font-medium text-gray-700 dark:text-gray-300 mb-0.5">{project.title}</h2>
             <p className="text-gray-600 dark:text-gray-400 mb-3">{project.description}</p>
             <div className="relative w-2xl aspect-video bg-gray-50 rounded-2xl overflow-hidden">
-                <Image src={project.image} alt={project.title} fill={true} objectFit="cover"/>
+                <Image src={project.image} alt={project.title} fill={true} className="object-cover" />
             </div>
 
             <div className="min-w-full py-4">

@@ -19,7 +19,7 @@ export default function Hero() {
             <div className="bg-gradient-to-b from-pink-500 to-cyan-400 rounded-full p-1 md:p-2">
                 <div
                     className="rounded-full w-40 md:w-[250px] aspect-square relative">
-                    <Image src="/me.jpeg" fill={true} objectFit="cover" alt="Picture of me" className="rounded-full"/>
+                    <Image src="/me.jpeg" fill={true} alt="Picture of me" className="rounded-full object-cover"/>
                 </div>
             </div>
         </section>

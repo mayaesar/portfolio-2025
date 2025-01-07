@@ -14,19 +14,19 @@ const projects = [
         github: "https://github.com/mayaesar/pinterest_clone"
     },
     {
+        title: "Instagram Dashboard",
+        description: "A dashboard for Instagram that takes in JSON files and displays the data, built with Next.js, Tailwind CSS, Apexcharts, and Jotai",
+        stack: "Next.js, Tailwind, Apexcharts, Jotai",
+        image: "/InstagramDashboard.png",
+        url: "https://instagram-dashboard-seven.vercel.app/",
+        github: "https://github.com/mayaesar/instagram-dashboard"
+    },
+    {
         title: "Jira Clone",
         description: "A Team Project cloning Jira management tool built with PostgreSQL and Java",
         stack: "PLpgSQL, Java",
         image: "/JiraERD.png",
         github: "https://gitlab.com/testing4434305/finalprojectdatabase2"
-    },
-    {
-        title: "Modern Restaurant",
-        description: "A modern restaurant website built with HTML and CSS",
-        stack: "HTML, CSS",
-        image: "/restaurantsSite.png",
-        url: "https://bright-halva-2198d9.netlify.app/",
-        github: "https://github.com/mayaesar/RestaurantAssignment"
     }
 ]
 
