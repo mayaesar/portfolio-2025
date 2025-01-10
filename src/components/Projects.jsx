@@ -10,6 +10,7 @@ const projects = [
         description: "A Pinterest clone built with Next.js and Tailwind CSS",
         stack: "Next.js, Tailwind",
         image: "/PinterestCloneImg.png",
+        video: "https://www.youtube.com/embed/1Jan7qrdVoM?autoplay=1&controls=0&mute=1&loop=1&playlist=1Jan7qrdVoM&vq=hd1080",
         url: "https://pinterest-clone-gilt-theta.vercel.app/",
         github: "https://github.com/mayaesar/pinterest_clone"
     },
@@ -18,7 +19,7 @@ const projects = [
         description: "A dashboard for Instagram that takes in JSON files and displays the data, built with Next.js, Tailwind CSS, Apexcharts, and Jotai",
         stack: "Next.js, Tailwind, Apexcharts, Jotai",
         image: "/InstagramDashboard.png",
-        video: "https://www.youtube.com/embed/FCsY7eqGxH4?autoplay=1&controls=0&mute=1&loop=1&playlist=FCsY7eqGxH4",
+        video: "https://www.youtube.com/embed/FCsY7eqGxH4?autoplay=1&controls=0&mute=1&loop=1&playlist=FCsY7eqGxH4&vq=hd1080",
         url: "https://instagram-dashboard-seven.vercel.app/",
         github: "https://github.com/mayaesar/instagram-dashboard"
     },
