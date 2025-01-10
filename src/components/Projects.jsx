@@ -18,6 +18,7 @@ const projects = [
         description: "A dashboard for Instagram that takes in JSON files and displays the data, built with Next.js, Tailwind CSS, Apexcharts, and Jotai",
         stack: "Next.js, Tailwind, Apexcharts, Jotai",
         image: "/InstagramDashboard.png",
+        video: "https://www.youtube.com/embed/FCsY7eqGxH4?autoplay=1&controls=0&mute=1&loop=1&playlist=FCsY7eqGxH4",
         url: "https://instagram-dashboard-seven.vercel.app/",
         github: "https://github.com/mayaesar/instagram-dashboard"
     },
