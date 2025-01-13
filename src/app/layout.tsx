@@ -8,17 +8,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Maya Esar",
     description: "Full Stack Developer - Portfolio",
-    images: [
-        "https://mayaesar.com/_next/image?url=%2Fme.jpeg&w=3840&q=75"
-    ]
+    images: ["https://mayaesar.com/_next/image?url=%2Fme.jpeg&w=3840&q=75"],
   },
   twitter: {
     title: "Maya Esar",
     description: "Full Stack Developer - Portfolio",
-    images: [
-      "https://mayaesar.com/_next/image?url=%2Fme.jpeg&w=3840&q=75"
-    ]
-  }
+    images: ["https://mayaesar.com/_next/image?url=%2Fme.jpeg&w=3840&q=75"],
+  },
 };
 
 export default function RootLayout({
