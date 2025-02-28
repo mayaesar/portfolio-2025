@@ -9,7 +9,7 @@ export default function Hero() {
         <p className="bg-gradient-to-r from-pink-500 to-cyan-400 inline-block text-transparent bg-clip-text">
           Maya Esar
         </p>
-        <p>I'm a Web Developer</p>
+        <p>I'm a Developer</p>
       </div>
       <div className="block md:hidden text-3xl font-semibold">
         <span>Hi, My name is </span>
