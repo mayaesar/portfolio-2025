@@ -17,7 +17,7 @@ export default function ProjectCard({ project }: any) {
         {project.video ? (
           <iframe
             src={project.video}
-            className="object-cover w-full h-full"
+            className="object-fit w-full h-full pointer-events-none"
             allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           />
         ) : (

@@ -5,6 +5,16 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
 const projects = [
   {
+    title: "Mivory - Landing page",
+    description:
+      "A Start-up Bookmark manager landing page built with Nuxt.js, Resend and Tailwind CSS",
+    stack: "Nuxt.js, Tailwind",
+    video:
+      "https://www.youtube.com/embed/LdhN0w-D0SU?si=veEs8dcN4-uG-FSN&autoplay=1&controls=0&mute=1&loop=1&playlist=LdhN0w-D0SU",
+    url: "https://mivory.app/",
+    github: "https://github.com/mayaesar/mivory-landing",
+  },
+  {
     title: "Pinterest Clone",
     description: "A Pinterest clone built with Next.js and Tailwind CSS",
     stack: "Next.js, Tailwind",
@@ -15,7 +25,7 @@ const projects = [
     github: "https://github.com/mayaesar/pinterest_clone",
   },
   {
-    title: "Instagram Dashboard",
+    title: "Instagram Dashboard (Desktop)",
     description:
       "A dashboard for Instagram that takes in JSON files and displays the data, built with Next.js, Tailwind CSS, Apexcharts, and Jotai",
     stack: "Next.js, Tailwind, Apexcharts, Jotai",
@@ -40,7 +50,7 @@ export default function Projects() {
 
   const scrollBy = (index: number) => {
     scrollContainer.current?.scrollBy({
-      left: index * scrollContainer.current.offsetWidth,
+      left: (index * scrollContainer.current.offsetWidth) / projects.length,
       behavior: "smooth",
     });
   };
