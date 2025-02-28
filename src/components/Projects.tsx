@@ -1,13 +1,14 @@
 "use client";
 import ProjectCard from "@/components/ProjectCard";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
+import { cn } from "@/utils/cn";
 
 const projects = [
   {
     title: "Mivory - Landing page",
     description:
-      "A Start-up Bookmark manager landing page built with Nuxt.js, Resend and Tailwind CSS",
+      "A Start-up landing page for a Bookmark manager app built with Nuxt.js and Tailwind CSS, implemented Resend for email mailing list",
     stack: "Nuxt.js, Tailwind",
     video:
       "https://www.youtube.com/embed/LdhN0w-D0SU?si=veEs8dcN4-uG-FSN&autoplay=1&controls=0&mute=1&loop=1&playlist=LdhN0w-D0SU",
@@ -47,17 +48,26 @@ const projects = [
 
 export default function Projects() {
   const scrollContainer = useRef<HTMLDivElement>(null);
+  const [scrollIndex, setScrollIndex] = useState(0);
 
   const scrollBy = (index: number) => {
     scrollContainer.current?.scrollBy({
-      left: (index * scrollContainer.current.offsetWidth) / projects.length,
+      left: index * scrollContainer.current.offsetWidth,
       behavior: "smooth",
     });
   };
 
+  const scrollTo = (index: number) => {
+    scrollContainer.current?.scrollTo({
+      left: index * scrollContainer.current.offsetWidth,
+      behavior: "smooth",
+    });
+    setScrollIndex(index);
+  };
+
   return (
     <section className="relative">
-      <div className="font-bold text-2xl md:text-4xl text-gray-800 dark:text-gray-200 mb-6">
+      <div className="font-bold text-2xl md:text-4xl text-gray-800 dark:text-gray-200 mb-6 font-theme">
         My Projects
       </div>
       <div
@@ -80,6 +90,19 @@ export default function Projects() {
       >
         <FaAngleRight className="size-10" />
       </button>
+      <div className={`md:hidden flex gap-4 justify-center`}>
+        {projects.map((project, index) => {
+          return (
+            <button
+              key={index}
+              onClick={() => scrollTo(index)}
+              className={cn("w-4 h-4 bg-gray-400 rounded-full", {
+                "bg-pink-400": index === scrollIndex,
+              })}
+            />
+          );
+        })}
+      </div>
     </section>
   );
 }

@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section>
-      <div className="font-bold text-2xl md:text-4xl text-gray-800 dark:text-gray-200 mb-6">
+      <div className="font-bold text-2xl md:text-4xl text-gray-800 dark:text-gray-200 mb-6 font-theme">
         About Me
       </div>
       <p className="text-left text-lg text-gray-700 dark:text-gray-300 leading-relaxed">

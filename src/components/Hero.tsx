@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col-reverse md:flex-row gap-12 justify-between items-center">
+    <section className="flex flex-col-reverse md:flex-row gap-12 justify-between items-center font-theme font-bold">
       <div className="hidden md:block w-full font-bold text-5xl text-gray-800 dark:text-gray-100 md:leading-[3.5rem]">
         <p>Hi,</p>
         <p>My name is</p>

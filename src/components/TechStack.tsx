@@ -11,7 +11,7 @@ export default function TechStack() {
   return (
     <section>
       <div className="py-12">
-        <div className="font-bold text-4xl text-gray-800 dark:text-gray-200">
+        <div className="font-bold text-4xl text-gray-800 dark:text-gray-200 font-theme">
           {" "}
           My Tech Stack
         </div>

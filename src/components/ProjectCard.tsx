@@ -10,7 +10,7 @@ export default function ProjectCard({ project }: any) {
       <h2 className="text-xl font-medium text-gray-700 dark:text-gray-300 mb-0.5">
         {project.title}
       </h2>
-      <p className="text-gray-600 dark:text-gray-400 mb-3">
+      <p className="text-gray-600 dark:text-gray-400 mb-3 max-h-[75px] min-h-[75px] overflow-y-scroll">
         {project.description}
       </p>
       <div className="relative w-2xl aspect-video bg-gray-50 rounded-2xl overflow-hidden">
